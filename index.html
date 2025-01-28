@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trovami</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(45deg, #4CAF50, #2E7D32);
+            color: white;
+            padding: 1.5rem 2rem;
+            text-align: center;
+        }
+        header img {
+            max-width: 300px;
+            margin-bottom: 1rem;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #2E7D32;
+        }
+        .hero {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: #e8f5e9;
+            color: #2E7D32;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 3rem 2rem;
+            background: #f4f4f9;
+        }
+        .feature {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .feature h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #4CAF50;
+        }
+        .feature p {
+            font-size: 1rem;
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #2E7D32;
+            color: white;
+            font-size: 0.9rem;
+        }
+        footer p {
+            margin: 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #fefefe;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="LogoTrovami.png" alt="Trovami">
+        <p>Conecta a trabajadores no registrados con clientes que los necesitan</p>
+    </header>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#acercade">Acerca de</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div>
+            <a href="/inicio-sesion" class="btn">Iniciar Sesión</a>
+            <a href="/registro" class="btn">Registrarse</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Encuentra el talento adecuado para cualquier tarea</h1>
+        <p>Trovami te permite contactar con personas calificadas en diversas áreas</p>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <h2>Fácil de usar</h2>
+            <p>Regístrate y publica tu servicios en minutos. Los clientes interesados te contactarán directamente.</p>
+        </div>
+        <div class="feature">
+            <h2>Variedad de categorías</h2>
+            <p>Encuentra soluciones en múltiples áreas: construcción, limpieza, jardineria y más.</p>
+        </div>
+        <div class="feature">
+            <h2>Empoderando a los trabajadores</h2>
+            <p>Ayudamos a trabajadores no registrados a encontrar oportunidades de empleo sin intermediarios.</p>
+        </div>
+        <div class="feature">
+            <h2>Conexiones confiables</h2>
+            <p>Consulta las calificaciones y recomendaciones de otros usuarios antes de contratar.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Trovami. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
