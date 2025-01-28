@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+header {
+  background: linear-gradient(45deg, #4CAF50, #2E7D32);
+  color: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+header img {
+  max-width: 300px;
+  margin-bottom: 1rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.navbar a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.navbar a:hover {
+  color: #2E7D32;
+}
+.hero {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #e8f5e9;
+  color: #2E7D32;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background: #f4f4f9;
+}
+.feature {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.feature h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #4CAF50;
+}
+.feature p {
+  font-size: 1rem;
+  color: #666;
+}
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #2E7D32;
+  color: white;
+  font-size: 0.9rem;
+}
+footer p {
+  margin: 0;
+}
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #fefefe;
+}
