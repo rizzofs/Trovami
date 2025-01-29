@@ -125,3 +125,60 @@ footer p {
 .btn:hover {
   background: #fefefe;
 }
+/* Formato del formulario de inicio de sesion */
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.login-form h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #4CAF50;
+  /*letra en negrita*/
+  font-weight: bold;
+}
+.login-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.login-form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+.login-form button {
+  width: 100%;
+  padding: 0.8rem;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.login-form button:hover {
+  background: #2E7D32;
+}
+.login-form .error {
+  background: #f8d7da;
+  color: #842029;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+.login-form .success {
+  background: #d1e7dd;
+  color: #0f5132;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}

@@ -13,6 +13,7 @@ export default function Home() {
               alt="Vercel logomark"
               width={600}
               height={400}
+              layout="responsive" // centrar imagen
             />
         </div>
 
