@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -28,7 +29,9 @@ export default function Home() {
             <li><a href="#contacto">Contacto</a></li>
         </ul>
         <div>
-            <a href="/inicio-sesion" className="btn">Iniciar Sesión</a>
+            <Link href="/inicio-sesion" className="btn">
+              Iniciar Sesión
+            </Link>
             <a href="/registro" className="btn">Registrarse</a>
         </div>
         </nav>
