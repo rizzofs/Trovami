@@ -3,10 +3,18 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div >
-      <main>
+    <div>
+      <head>
+        <title>Trovami</title>
+        {/* <link rel="icon" href="trovami/src/app/favicon.ico" />  AVERIGUAR COMO PONER LA RUTA DEL FAVICON */}
+      </head>
+    
+      <div>
+      
+    
+        <main>
 
-        <div>
+        <>
             <Image
               // className="dark:invert"
               src="/LogoTrovami.png"
@@ -15,13 +23,12 @@ export default function Home() {
               height={400}
               layout="responsive" // centrar imagen
             />
-        </div>
+        </>
 
         <header>
-        <p>Conecta a trabajadores no registrados con clientes que los necesitan</p>
+          <p>Conecta a trabajadores no registrados con clientes que los necesitan</p>
+        </header>
 
-    </header>
-    
         <nav className="navbar">
         <ul>
             <li><a href="#">Inicio</a></li>
@@ -60,11 +67,12 @@ export default function Home() {
             <p>Consulta las calificaciones y recomendaciones de otros usuarios antes de contratar.</p>
         </div>
     </section>
-
-      </main>
-      <footer>
-        <p>&copy; 2025 Trovami. Todos los derechos reservados.</p>
-      </footer>
+        </main>
+        <footer>
+          <p>&copy; 2025 Trovami. Todos los derechos reservados.</p>
+        </footer>
+      </div>
     </div>
   );
 }
+
