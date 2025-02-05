@@ -5,7 +5,7 @@ export default function Home() {
 
 
         //formulario de inicio de sesion
-        <div>
+        <div className="login-container">
             <head>
                 <title>Iniciar Sesión</title>
             </head>

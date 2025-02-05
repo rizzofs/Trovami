@@ -8,41 +8,35 @@ export default function Home() {
         <title>Trovami</title>
         {/* <link rel="icon" href="trovami/src/app/favicon.ico" />  AVERIGUAR COMO PONER LA RUTA DEL FAVICON */}
       </head>
-    
       <div>
-      
-    
         <main>
-
+        <nav className="navbar">
+          <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#acercade">Acerca de</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+          </ul>
+          <div>
+              <a><Link href="/inicio-sesion" className="btn">Iniciar Sesión</Link></a>
+              <a><Link href="/registro" className="btn">Registrarse</Link></a>
+          </div>
+        </nav>
         <>
             <Image
               // className="dark:invert"
               src="/LogoTrovami.png"
-              alt="Vercel logomark"
+              alt="Trovami Logo"
               width={600}
               height={400}
               layout="responsive" // centrar imagen
             />
         </>
-
+        
         <header>
           <p>Conecta a trabajadores no registrados con clientes que los necesitan</p>
         </header>
-
-        <nav className="navbar">
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#acercade">Acerca de</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-        <div>
-            <Link href="/inicio-sesion" className="btn">
-              Iniciar Sesión
-            </Link>
-            <a href="/registro" className="btn">Registrarse</a>
-        </div>
-        </nav>
+        
 
     <section className="hero">
         <h1>Encuentra el talento adecuado para cualquier tarea</h1>

@@ -43,6 +43,17 @@ export default function Home() {
                     <label>Confirmar Contraseña</label>
                     <input type="password" placeholder="confirmar contraseña" required/>
                 </div>
+                <div>
+                    <label>Carga tu servicio</label>
+                    <input type="checkbox"/>
+                </div>
+
+                
+            
+
+
+
+
                 <button type="submit">Registrarse</button>
             </form>
         </div>

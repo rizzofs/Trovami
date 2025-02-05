@@ -37,29 +37,36 @@ header img {
   max-width: 300px;
   margin-bottom: 1rem;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
   background: white;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .navbar ul {
   list-style: none;
   display: flex;
   gap: 1rem;
-  margin: 0;
-  padding: 0;
+  margin: 15px;
 }
 .navbar a {
   text-decoration: none;
-  color: #000000;
+  color: black;
   font-weight: bold;
   transition: color 0.3s;
 }
 .navbar a:hover {
   color: #2E7D32;
 }
+
+.navbar div {
+  display: flex;
+  gap: 1rem;
+}
+
+
 .hero {
   text-align: center;
   padding: 3rem 2rem;
@@ -126,6 +133,13 @@ footer p {
   background: #fefefe;
 }
 /* Formato del formulario de inicio de sesion */
+.login-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
 .login-form {
   width: 100%;
   max-width: 400px;
@@ -133,7 +147,7 @@ footer p {
   padding: 2rem;
   background: white;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow:  1px 1px 4px 8px rgba(0, 0, 0, 0.1);
 }
 .login-form p{
   text-align: center;
