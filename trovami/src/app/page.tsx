@@ -11,7 +11,7 @@ export default function Home() {
       <div>
         <main>
         <nav className="navbar">
-          <div className="lef/var">
+          <div className="left-var">
           <ul>
               <li><a href="#">Inicio</a></li>
               <li><a href="#acercade">Acerca de</a></li>
@@ -22,8 +22,8 @@ export default function Home() {
           <div className="right-var">
             <input className="email" type="email" placeholder="correo electrónico"/>
             <input  className="password" type="password" placeholder="contraseña" />
-            <button type="submit">Iniciar Sesión</button>
-            <a className="btn"><Link href="/registro">Registrarse</Link></a>
+            <a className="btn-is"> <Link href="/ingreso">Iniciar Sesión</Link></a>
+            <a className="btn"> <Link href="/registro">Registrarse</Link></a>
           </div>
         </nav>
         <>

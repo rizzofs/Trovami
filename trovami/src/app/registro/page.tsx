@@ -12,7 +12,7 @@ const [dni, setDni] = useState('');
 const [email, setEmail] = useState('');
 const [password, setPassword] = useState('');
 const [confirmPassword, setConfirmPassword] = useState('');
-const [servicio, setServicio] = useState(false);
+
 const [message, setMessage] = useState('');
 
 // Función para manejar el envío del formulario
@@ -25,7 +25,6 @@ interface FormData {
     dni: string;
     email: string;
     password: string;
-    servicio: boolean;
 }
 
 const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -58,7 +57,6 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                 dni,
                 email,
                 password,
-                servicio,
             } as FormData),
         });
 
@@ -170,14 +168,6 @@ return (
         value={confirmPassword}
         onChange={(e) => setConfirmPassword(e.target.value)}
         required
-        />
-    </div>
-    <div>
-        <label>Carga tu servicio</label>
-        <input
-        type="checkbox"
-        checked={servicio}
-        onChange={(e) => setServicio(e.target.checked)}
         />
     </div>
 
