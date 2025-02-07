@@ -11,15 +11,19 @@ export default function Home() {
       <div>
         <main>
         <nav className="navbar">
+          <div className="lef/var">
           <ul>
               <li><a href="#">Inicio</a></li>
               <li><a href="#acercade">Acerca de</a></li>
               <li><a href="#servicios">Servicios</a></li>
               <li><a href="#contacto">Contacto</a></li>
           </ul>
-          <div>
-              <a><Link href="/inicio-sesion" className="btn">Iniciar Sesión</Link></a>
-              <a><Link href="/registro" className="btn">Registrarse</Link></a>
+          </div>
+          <div className="right-var">
+            <input className="email" type="email" placeholder="correo electrónico"/>
+            <input  className="password" type="password" placeholder="contraseña" />
+            <button type="submit">Iniciar Sesión</button>
+            <a className="btn"><Link href="/registro">Registrarse</Link></a>
           </div>
         </nav>
         <>

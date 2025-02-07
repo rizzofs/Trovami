@@ -51,6 +51,29 @@ header img {
   gap: 1rem;
   margin: 15px;
 }
+
+.navbar .right-var .email, .navbar .right-var .password {
+  border: 1px solid black; /*borde de color azul */
+  padding: 8px; /*espaciado de 15px */
+  border-radius: 50px; /*borde redondeado */
+  text-align: left;
+}
+
+.btn{
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #fefefe;
+}
+
+
 .navbar a {
   text-decoration: none;
   color: black;
@@ -119,19 +142,7 @@ footer {
 footer p {
   margin: 0;
 }
-.btn {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  background: #4CAF50;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-.btn:hover {
-  background: #fefefe;
-}
+
 /* Formato del formulario de inicio de sesion */
 .login-container{
   height: 100vh;
