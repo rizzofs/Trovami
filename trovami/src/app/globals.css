@@ -52,7 +52,7 @@ header img {
 }
 
 .navbar .right-var .email, .navbar .right-var .password {
-  border: 1px solid black; /*borde de color azul */
+  border: 1px solid black; /*borde de color negro */
   padding: 8px; /*espaciado de 15px */
   border-radius: 50px; /*borde redondeado */
   text-align: left;

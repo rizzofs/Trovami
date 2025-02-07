@@ -1,5 +1,37 @@
+.navbar{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    height: 60px;
+}
+
+.left-var, .right-var{
+    display: flex;
+    align-items: center;
+}
+.center-var{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.search-var{
+    border: 1px solid black; /*borde de color negro */
+    padding: 8px; /*espaciado de 8px */
+    border-radius: 50px; /*borde redondeado */
+    text-align: left;
+    height: 100%;
+    width: 300px;
+    
+
+}
 main {
     width: 100%;
     height: 500px;
-    background-color: aqua;
+    background-color: #cccc;
 }
+
